@@ -1,0 +1,23 @@
+<!-- <div>
+  <div>{{ lecturer.first_name + " " + lecturer.last_name }}</div>
+  <div>{{ lecturer.phone }}</div>
+  <div>{{ lecturer.email }}</div>
+  <div>{{ year }} years of experience</div>
+</div> -->
+
+<div class="card" style="width: 18rem">
+  <img
+    src="/assets/photos/{{ lecturer.photo }}.jpg"
+    class="card-img-top img-responsive"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ lecturer.first_name + " " + lecturer.last_name }}
+    </h5>
+    <p class="card-text">{{ lecturer.phone }}</p>
+    <p class="card-text">{{ lecturer.email }}</p>
+    <p class="card-text">{{ year }} years of experience</p>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
